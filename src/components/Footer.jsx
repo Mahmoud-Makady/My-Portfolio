@@ -1,6 +1,6 @@
 
 
-
+// import logo from "../assets/logo.png";
 
 const sitemap = [
     {
@@ -108,7 +108,7 @@ const Footer = () => {
                   className="logo reveal-up"
                   >
                    <img 
-                    src="/src/assets/logo.png" 
+                    src= "../../public/images/logo.png" 
                     alt="Logo"
                     width={100}
                     height={100} 

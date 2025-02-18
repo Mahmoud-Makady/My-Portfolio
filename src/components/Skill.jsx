@@ -6,7 +6,7 @@ import SkillCard from "./SkillCard"
 
 const skillItem = [
     {
-        imgSrc : '/src/assets/html5.png',
+        imgSrc : '/images/html5.png',
         label: 'HTML5',
         desc: 'User Interface'
     },

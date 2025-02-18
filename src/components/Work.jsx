@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/src/assets/shopo-market.png",
+    imgSrc: "../../public/images/shopo-market.png",
     title: "Shopo-Market",
     tags: [
       "API",
@@ -21,7 +21,7 @@ const works = [
     productionLink: "https://shopo-market.netlify.app/",
   },
   {
-    imgSrc: "/src/assets/screen-spot.png",
+    imgSrc: "../../public/images/screen-spot.png",
     title: "Screen-Spot",
     tags: [
       "API",
@@ -37,7 +37,7 @@ const works = [
     productionLink: "https://screenn-spot.netlify.app/",
   },
   {
-    imgSrc: "/src/assets/e-games.png",
+    imgSrc: "../../public/images/e-games.png",
     title: "E-Games",
     tags: [
       "HTML5",
@@ -53,7 +53,7 @@ const works = [
       "https://mahmoud-makady.github.io/EGames/",
   },
   {
-    imgSrc: "/src/assets/movies.png",
+    imgSrc: "../../public/images/movies.png",
     title: "Movies",
     tags: [
         "HTML5",
@@ -68,7 +68,7 @@ const works = [
       "https://mahmoud-makady.github.io/Movies/",
   },
   {
-    imgSrc: "/src/assets/study-planner.png",
+    imgSrc: "../../public/images/study-planner.png",
     title: "Study-Planner",
     tags: [
       "FireStore", 
@@ -83,7 +83,7 @@ const works = [
   },
 
   {
-    imgSrc: "/src/assets/to-do.png",
+    imgSrc: "../../public/images/to-do.png",
     title: "To-Do-List",
     tags: [
       "Web-design", 
@@ -95,7 +95,7 @@ const works = [
     productionLink: "https://mahmoud-makady.github.io/To-Do-List/",
   },
   {
-    imgSrc: "/src/assets/quick-store.png",
+    imgSrc: "../../public/images/quick-store.png",
     title: "Quick-Store",
     tags: [
       "Web-design", 
@@ -109,7 +109,7 @@ const works = [
     productionLink: "https://mahmoud-makady.github.io/Quick-Store/",
   },
   {
-    imgSrc: "/src/assets/mealify.png",
+    imgSrc: "../../public/images/mealify.png",
     title: "Mealify",
     tags: [
       "Web-design", 

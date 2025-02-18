@@ -2,7 +2,6 @@
  *
  *
  */
-import icon from "../assets/icon.png";
 
 const aboutItems = [
   {
@@ -47,7 +46,7 @@ const About = () => {
             ))}
 
             <img
-              src={icon}
+              src= "../../public/images/icon.png"
               alt="logo"
               width={60}
               height={60}

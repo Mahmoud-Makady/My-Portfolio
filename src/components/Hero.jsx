@@ -2,7 +2,7 @@
  * Components
  */
 import { ButtonOutline, ButtonPrimary } from "./Button";
-import pic from "../assets/pic.jpg";
+
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-slate-400 via-25% via-slate-400/40 to-65% rounded-[70px] overflow-hidden">
             <img
-              src={pic}
+              src="../../public/images/pic.jpg"
               alt="Mahmoud Makady"
               className="w-auto h-auto"
             />

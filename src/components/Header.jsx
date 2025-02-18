@@ -8,7 +8,6 @@ import { useState } from "react";
  * Components
  */
 import Navbar from "./Navbar";
-import logo from "../assets/logo.png";
 
 const Header = () => {
 
@@ -20,7 +19,7 @@ const Header = () => {
         <h1>
           <a href="/" className="logo text-zinc-50 ">
             <img
-              src={logo}
+              src= "../../public/images/logo.png"
               width={80}
               height={80}
               alt="Abdulrahman Khalifa"
