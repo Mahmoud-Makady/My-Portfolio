@@ -19,7 +19,7 @@ const Header = () => {
         <h1>
           <a href="/" className="logo text-zinc-50 ">
             <img
-              src= "/public/images/logo.png"
+              src= "/images/logo.png"
               width={80}
               height={80}
               alt="Mahmoud Makady"

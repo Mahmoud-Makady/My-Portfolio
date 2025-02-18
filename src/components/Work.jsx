@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/public/images/shopo-market.png",
+    imgSrc: "/images/shopo-market.png",
     title: "Shopo-Market",
     tags: [
       "API",
@@ -21,7 +21,7 @@ const works = [
     productionLink: "https://shopo-market.netlify.app/",
   },
   {
-    imgSrc: "/public/images/screen-spot.png",
+    imgSrc: "/images/screen-spot.png",
     title: "Screen-Spot",
     tags: [
       "API",
@@ -37,7 +37,7 @@ const works = [
     productionLink: "https://screenn-spot.netlify.app/",
   },
   {
-    imgSrc: "/public/images/e-games.png",
+    imgSrc: "/images/e-games.png",
     title: "E-Games",
     tags: [
       "HTML5",
@@ -53,7 +53,7 @@ const works = [
       "https://mahmoud-makady.github.io/EGames/",
   },
   {
-    imgSrc: "/public/images/movies.png",
+    imgSrc: "/images/movies.png",
     title: "Movies",
     tags: [
         "HTML5",
@@ -68,7 +68,7 @@ const works = [
       "https://mahmoud-makady.github.io/Movies/",
   },
   {
-    imgSrc: "/public/images/study-planner.png",
+    imgSrc: "/images/study-planner.png",
     title: "Study-Planner",
     tags: [
       "FireStore", 
@@ -83,7 +83,7 @@ const works = [
   },
 
   {
-    imgSrc: "/public/images/to-do.png",
+    imgSrc: "/images/to-do.png",
     title: "To-Do-List",
     tags: [
       "Web-design", 
@@ -95,7 +95,7 @@ const works = [
     productionLink: "https://mahmoud-makady.github.io/To-Do-List/",
   },
   {
-    imgSrc: "/public/images/quick-store.png",
+    imgSrc: "/images/quick-store.png",
     title: "Quick-Store",
     tags: [
       "Web-design", 
@@ -109,7 +109,7 @@ const works = [
     productionLink: "https://mahmoud-makady.github.io/Quick-Store/",
   },
   {
-    imgSrc: "/public/images/mealify.png",
+    imgSrc: "/images/mealify.png",
     title: "Mealify",
     tags: [
       "Web-design", 
