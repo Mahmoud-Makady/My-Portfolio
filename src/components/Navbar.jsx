@@ -63,7 +63,7 @@ const Navbar = ({ navOpen }) => {
   ];
 
   return (
-    <nav className={"navbar bg-slate-700-30" + (navOpen ? "active" : "")}>
+    <nav className={"navbar bg-sky-800 " + (navOpen ? " active" : "")}>
       {navItems.map(({ label, link, className, ref }, key) => (
         <a
           href={link}

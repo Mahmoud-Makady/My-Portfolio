@@ -79,13 +79,13 @@ body {
 /* Menu btn */
 
 .menu-btn {
-    @apply h-10 w-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl transition-[transform,background-color] hover:bg-zinc-50/15  active:scale-95
+    @apply h-10 w-10 grid place-items-center bg-sky-900/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl transition-[transform,background-color] hover:bg-zinc-50/15  active:scale-95
 }
 
 /* Navbar */
 
 .navbar {
-    @apply absolute right-0 top-full mt-2 min-w-40  rounded-2xl p-2 ring-inset ring-1 scale-90 ring-zinc-50/5 isolate blur-sm opacity-0 invisible transition-[opacity,transform-filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl
+    @apply absolute right-0 top-full mt-2 min-w-40 bg-sky-900/10  rounded-2xl p-2 ring-inset ring-1 scale-90 ring-zinc-50/5 isolate blur-sm opacity-0 invisible transition-[opacity,transform-filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl
 }
 
 .navbar.active{
@@ -94,7 +94,7 @@ body {
 
 
 .nav-link {
-    @apply grid items-center font-medium text-sm h-9 px-4 tracking-wide text-slate-200/70 hover:text-sky-700 transition-colors
+    @apply grid items-center font-medium text-sm h-9 px-4 tracking-wide text-slate-200/70 hover:text-sky-500 transition-colors
 }
 
 
