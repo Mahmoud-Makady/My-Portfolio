@@ -14,7 +14,7 @@ const ProjectCard = ({
   return (
     <div
       className={
-        "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " +
+        "relative p-4 rounded-2xl bg-slate-700 hover:bg-sky-950 active:bg-slate-700/60 ring-1 ring-inset ring-slate-50/5 transition-colors " +
         classes
       }
     >
@@ -29,7 +29,7 @@ const ProjectCard = ({
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((label, key) => (
               <span
-                className="h-8 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg"
+                className="h-8 text-sm text-slate-300 hover:text-slate-900 bg-slate-900 hover:bg-slate-300 transition grid items-center px-3 rounded-lg"
                 key={key}
               >
                 {label}
@@ -39,9 +39,9 @@ const ProjectCard = ({
         </div>
         <div className="flex flex-col gap-2">
           <div
-            className={`w-11 h-11 rounded-lg grid place-items-center text-zinc-950 shrink-0 ${
+            className={`w-11 h-11 rounded-lg grid place-items-center text-slate-300 hover:text-slate-900 shrink-0 transition ${
               projectLink
-                ? "bg-sky-400 cursor-pointer"
+                ? "bg-slate-900 hover:bg-slate-300 cursor-pointer transition"
                 : "bg-gray-300 cursor-not-allowed"
             }`}
             aria-disabled={!projectLink}
@@ -62,9 +62,9 @@ const ProjectCard = ({
           </div>
 
           <div
-            className={`w-11 h-11 rounded-lg grid place-items-center text-zinc-950 shrink-0 ${
+            className={`w-11 h-11 rounded-lg grid place-items-center text-slate-300 hover:text-slate-900 shrink-0 transition ${
               productionLink
-                ? "bg-sky-400 cursor-pointer"
+                ? "bg-slate-900 hover:bg-slate-300 cursor-pointer transition"
                 : "bg-gray-300 cursor-not-allowed"
             }`}
             aria-disabled={!productionLink}

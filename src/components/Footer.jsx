@@ -12,12 +12,12 @@ const sitemap = [
         href: '#about'
     },
     {
-        label: 'Work',
+        label: 'Projects',
         href: '#work'
     },
     
     {
-        label: 'Contact me',
+        label: 'Get in touch',
         href: '#contact'
     }
 ];
@@ -25,11 +25,19 @@ const sitemap = [
 const socials = [
     {
         label: 'GitHub',
-        href: 'https://github.com/Abd0Khalifa'
+        href: 'https://github.com/Mahmoud-Makady'
     },
     {
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/abdulrahman-khalifa-a5774b241/'
+        href: 'https://www.linkedin.com/in/mahmoud-makady'
+    },
+    {
+        label: 'WhatsApp',
+        href: 'https://wa.me/201065228048'
+    },
+    {
+        label: 'Gmail',
+        href: 'mailto:m.makady19@gmail.com'
     },
    
 ];
@@ -43,15 +51,10 @@ const Footer = () => {
             <div className="lg:grid lg:grid-cols-2">
                 <div className="mb-10">
                       <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-                        Let&apos;s work together today!
+                        Ready to create something great? Let's collaborate!
                     </h2>
 
-                    <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[80ch] reveal-up">
-                    Gmail: abdoali345757@gmail.com
-                    </p>
-                    <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[80ch] reveal-up">
-                    WhatsApp: 01033053482
-                    </p>
+                    
 
 
                 </div>
@@ -59,7 +62,7 @@ const Footer = () => {
 
                     <div>
                           <p className="mb-2 reveal-up">
-                            Sitemap
+                            Portfolio
                         </p>
                         <ul>
                             {sitemap.map(({label , href}, key)=>(
@@ -67,7 +70,7 @@ const Footer = () => {
                                 <li key={key}>
                                     <a 
                                     href={href}
-                                        className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                        className="block text-sm text-slate-400 py-1 transition-colors hover:text-sky-500 reveal-up"
                                     >
                                         {label}
                                     </a>
@@ -87,7 +90,7 @@ const Footer = () => {
                                     <a
                                         href={href}
                                         target="_blank"
-                                        className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                        className="block text-sm text-slate-400 py-1 transition-colors hover:text-sky-500 reveal-up"
                                         >
                                         {label}
                                     </a>
@@ -105,15 +108,15 @@ const Footer = () => {
                   className="logo reveal-up"
                   >
                    <img 
-                    src="/images/logo.svg" 
+                    src="/src/assets/logo.png" 
                     alt="Logo"
-                    width={60}
-                    height={60} 
+                    width={100}
+                    height={100} 
                     /> 
                   </a>
 
                   <p className="text-zinc-500 text-sm reveal-up">
-                      &copy; 2024 <span className="text-zinc-200 reveal-up">codewithAbdulrahman</span>
+                      &copy; 2025 <span className="text-sky-500 reveal-up">Mahmoud Makady</span>
                   </p>
             </div>
 

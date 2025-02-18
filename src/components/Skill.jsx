@@ -6,9 +6,9 @@ import SkillCard from "./SkillCard"
 
 const skillItem = [
     {
-        imgSrc : '/images/figma.svg',
-        label: 'Figma',
-        desc: 'Design tool'
+        imgSrc : '/src/assets/html5.png',
+        label: 'HTML5',
+        desc: 'User Interface'
     },
     {
         imgSrc : '/images/css3.svg',
@@ -19,6 +19,11 @@ const skillItem = [
         imgSrc : '/images/javascript.svg',
         label: 'JavaScript',
         desc: 'Interaction'
+    },
+    {
+        imgSrc : '/images/figma.svg',
+        label: 'Figma',
+        desc: 'Design tool'
     },
     // {
     //     imgSrc : '/images/nodejs.svg',
@@ -59,11 +64,11 @@ const Skill = () => {
         <div className="container">
 
             <h2 className="headline-2 reveal-up">
-                Essential Tools I use
+                    My Powerful Tools.
             </h2>
 
               <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up">
-                Discover the powerful tools and technologies I use to create exceptional, high-performing websites & application.
+                Uncover the powerful technologies and tools I use to craft top-tier, high-performance web experiences.
             </p>
 
             <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">

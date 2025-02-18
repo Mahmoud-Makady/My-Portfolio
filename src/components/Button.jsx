@@ -11,7 +11,7 @@ const ButtonPrimary = ({ href, target = "_self", label, icon, classes }) =>
     return(
         <a 
         href={href} 
-        className={"btn btn-primary " + classes}
+        className={"btn  " + classes}
         target={target}>
             {label}
 
@@ -23,7 +23,7 @@ const ButtonPrimary = ({ href, target = "_self", label, icon, classes }) =>
     )
   }else{
     return (
-      <button className={"btn btn-primary " + classes}>
+      <button className={"btn  " + classes}>
         {label}
 
         {icon ? (
@@ -53,23 +53,23 @@ const ButtonOutline = ({ href, target = "_self", label, icon, classes }) =>
     return(
         <a 
         href={href} 
-        className={"btn btn-outline " + classes}
+        className={"btn " + classes}
         target={target}>
             {label}
 
         {icon ? 
-            <span className="material-symbols-rounded" aria-hidden="true">{icon}</span>
+            <span className="material-symbols-rounded text-slate-950 hover:text-sky-500" aria-hidden="true">{icon}</span>
         : undefined}
 
         </a>
     )
   }else{
     return (
-      <button className={"btn btn-outline " + classes}>
+      <button className={"btn " + classes}>
         {label}
 
         {icon ? (
-          <span className="material-symbols-rounded" aria-hidden="true">
+          <span className="material-symbols-rounded text-sky-950 hover:text-sky-500" aria-hidden="true">
             {icon}
           </span>
         ) : undefined}

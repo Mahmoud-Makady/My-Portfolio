@@ -51,7 +51,7 @@ const Navbar = ({ navOpen }) => {
       className: "nav-link"
     },
     {
-      label: "Work",
+      label: "Projects",
       link: "#work",
       className: "nav-link"
     },
@@ -63,7 +63,7 @@ const Navbar = ({ navOpen }) => {
   ];
 
   return (
-    <nav className={"navbar " + (navOpen ? "active" : "")}>
+    <nav className={"navbar bg-slate-700-30" + (navOpen ? "active" : "")}>
       {navItems.map(({ label, link, className, ref }, key) => (
         <a
           href={link}

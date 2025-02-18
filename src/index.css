@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    @apply bg-zinc-900 text-zinc-50
+    @apply bg-slate-950 text-slate-50
 }
 
 
@@ -22,7 +22,7 @@ body {
 .headline-1,
 .headline-2{
     @apply max-w-max;
-    background: -webkit-linear-gradient(0deg,#fafafa,#a1a1aa);
+    background: -webkit-linear-gradient(0deg,#a1a1aa,#f8fafc);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,7 +85,7 @@ body {
 /* Navbar */
 
 .navbar {
-    @apply absolute right-0 top-full mt-2 min-w-40 bg-zinc-50/10 rounded-2xl p-2 ring-inset ring-1 scale-90 ring-zinc-50/5 isolate blur-sm opacity-0 invisible transition-[opacity,transform-filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl
+    @apply absolute right-0 top-full mt-2 min-w-40  rounded-2xl p-2 ring-inset ring-1 scale-90 ring-zinc-50/5 isolate blur-sm opacity-0 invisible transition-[opacity,transform-filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl
 }
 
 .navbar.active{
@@ -94,17 +94,17 @@ body {
 
 
 .nav-link {
-    @apply grid items-center font-medium text-sm h-9 px-4 tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+    @apply grid items-center font-medium text-sm h-9 px-4 tracking-wide text-slate-200/70 hover:text-sky-700 transition-colors
 }
 
 
 .nav-link.active{
-    @apply text-zinc-900 duration-500
+    @apply text-sky-950  duration-500
 }
 
 
 .navbar .active-box{
-    @apply absolute bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-500 
+    @apply absolute bg-slate-200 rounded-lg -z-10 transition-[top,left] duration-500 
 }
 
 
@@ -114,7 +114,7 @@ body {
 }
 
 .btn-secondary{
-    @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80
+    @apply bg-slate-200 hover:bg-sky-950 text-sky-950 hover:text-slate-200 active:bg-zinc-50/80
 }
 
 .btn .material-symbols-rounded{
@@ -138,13 +138,13 @@ body {
 /* Text Field  */
 
 .label{
-    @apply block text-zinc-200 text-sm font-normal mb-2
+    @apply block text-slate-200 text-sm font-normal mb-2
 }
 
 .text-field{
-    @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2;
+    @apply block outline-none w-full px-3 py-3 text-sm bg-slate-700 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-slate-50/5 focus:ring-sky-400 focus:ring-2;
 }
 
 .text-field::placeholder{
-    @apply text-zinc-400
+    @apply text-slate-400
 }

@@ -5,10 +5,27 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/movie.png",
-    title: "Movies-App",
+    imgSrc: "/src/assets/shopo-market.png",
+    title: "Shopo-Market",
     tags: [
-      "ReactJs",
+      "API",
+      "React.Js",
+      "Tailwind",
+      "Web Design",
+      "Redux",
+      "Context",
+      "Routing",
+      "AXIOS",
+    ],
+    projectLink: "https://github.com/Mahmoud-Makady/Shopo-Market",
+    productionLink: "https://shopo-market.netlify.app/",
+  },
+  {
+    imgSrc: "/src/assets/screen-spot.png",
+    title: "Screen-Spot",
+    tags: [
+      "API",
+      "React.Js",
       "BootStrap",
       "Web Design",
       "Redux",
@@ -16,55 +33,92 @@ const works = [
       "Routing",
       "AXIOS",
     ],
-    projectLink: "https://github.com/Abd0Khalifa/movies-app",
-    productionLink: "https://soft-fudge-e94dd7.netlify.app/",
+    projectLink: "https://github.com/Mahmoud-Makady/Screen-Spot",
+    productionLink: "https://screenn-spot.netlify.app/",
   },
   {
-    imgSrc: "/images/ecommerce.PNG",
-    title: "E-Commerce",
+    imgSrc: "/src/assets/e-games.png",
+    title: "E-Games",
     tags: [
+      "HTML5",
+      "CSS3",
       "API",
       "LocalStorage",
       "BootStrap",
-      "Paypal Payment",
       "JS",
       "ES6",
-      "JQuery",
     ],
-    projectLink: "https://github.com/Abd0Khalifa/E-Commerce-project",
+    projectLink: "https://github.com/Mahmoud-Makady/EGames",
     productionLink:
-      "https://abd0khalifa.github.io/E-Commerce-project/login.html",
+      "https://mahmoud-makady.github.io/EGames/",
   },
   {
-    imgSrc: "/images/x.PNG",
-    title: "simulation for X-platform",
-    tags: ["API", "LocalStorage", "Web Design", "BootStrap", "JS"],
-    projectLink: "https://github.com/Abd0Khalifa/X-platform-simulation",
+    imgSrc: "/src/assets/movies.png",
+    title: "Movies",
+    tags: [
+        "HTML5",
+        "CSS3",
+        "API",
+        "Web Design", 
+        "BootStrap", 
+        "JS"
+      ],
+    projectLink: "https://github.com/Mahmoud-Makady/Movies",
     productionLink:
-      "https://abd0khalifa.github.io/X-platform-simulation/login.html",
+      "https://mahmoud-makady.github.io/Movies/",
   },
   {
-    imgSrc: "/images/firebase.png",
-    title: "Firebase small System",
-    tags: ["FireStore", "Authentication", "JS", "BootStrap", "ES6", "JQuery"],
-    projectLink: "https://github.com/Abd0Khalifa/FirebaseAuth-ClouldFirestore",
+    imgSrc: "/src/assets/study-planner.png",
+    title: "Study-Planner",
+    tags: [
+      "FireStore", 
+      "Authentication", 
+      "JS", 
+      "BootStrap", 
+      "ES6"
+    ],
+    projectLink: "https://github.com/Mahmoud-Makady/Study-Planner",
     productionLink:
-      "https://abd0khalifa.github.io/FirebaseAuth-ClouldFirestore/logIn.html",
+      "https://mahmoud-makady.github.io/Study-Planner/",
   },
 
   {
-    imgSrc: "/images/todo.png",
-    title: "TO-DO App",
-    tags: ["Web-design", "JS", "CSS3"],
-    projectLink: "https://github.com/Abd0Khalifa/TodoApp",
-    productionLink: "https://abd0khalifa.github.io/TodoApp/",
+    imgSrc: "/src/assets/to-do.png",
+    title: "To-Do-List",
+    tags: [
+      "Web-design", 
+      "JS", 
+      "CSS3",
+      "Bootstrap"
+    ],
+    projectLink: "https://github.com/Mahmoud-Makady/To-Do-List",
+    productionLink: "https://mahmoud-makady.github.io/To-Do-List/",
   },
   {
-    imgSrc: "/images/hosto.png",
-    title: "Hosto Clone",
-    tags: ["Web-design", "BootStrap"],
-    projectLink: "https://github.com/Abd0Khalifa/Hosto",
-    productionLink: "https://abd0khalifa.github.io/Hosto/",
+    imgSrc: "/src/assets/quick-store.png",
+    title: "Quick-Store",
+    tags: [
+      "Web-design", 
+      "HTML5",
+      "CSS3",
+      "JS",
+      "API",
+      "BootStrap"
+    ],
+    projectLink: "https://github.com/Mahmoud-Makady/Quick-Store",
+    productionLink: "https://mahmoud-makady.github.io/Quick-Store/",
+  },
+  {
+    imgSrc: "/src/assets/mealify.png",
+    title: "Mealify",
+    tags: [
+      "Web-design", 
+      "HTML5",
+      "CSS3",
+      "BootStrap"
+    ],
+    projectLink: "https://github.com/Mahmoud-Makady/Mealify",
+    productionLink: "https://mahmoud-makady.github.io/Mealify/",
   },
 ];
 
@@ -94,12 +148,12 @@ const Work = () => {
         </div>
         <div className="grid place-items-center mt-8">
           <a
-            className="btn btn-primary reveal-up"
-            href="https://github.com/Abd0Khalifa"
+            className="btn btn-secondary p-5 reveal-up"
+            href="https://github.com/Mahmoud-Makady"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View More
+            See More
           </a>{" "}
         </div>
       </div>
