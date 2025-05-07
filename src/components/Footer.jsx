@@ -37,7 +37,7 @@ const socials = [
     },
     {
         label: 'Gmail',
-        href: 'mailto:m.makady19@gmail.com'
+        href: 'mailto:mahmoudmakady.dev@gmail.com'
     },
    
 ];

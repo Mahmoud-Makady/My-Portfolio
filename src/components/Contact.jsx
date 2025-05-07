@@ -18,7 +18,7 @@ const socialLinks = [
         alt: 'LinkedIn'
     },
     {
-        href: 'mailto:m.makady19@gmail.com',
+        href: 'mailto:mahmoudmakady.dev@gmail.com',
         rel: 'noopener noreferrer',
         icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm-1 2-7 5-7-5h14Zm1 12H4V8l8 5.99L20 8v10Z" fill="currentColor"/>

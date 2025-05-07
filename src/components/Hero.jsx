@@ -26,7 +26,7 @@ const Hero = () => {
               classes="bg-sky-700 hover:bg-sky-900 py-6 transition"
               label="Download resume"
               icon="download"
-              href="https://drive.google.com/file/d/1JY4FtuZg8khrrGMdDTVvxe48fNIGEOVP/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1MUSx9B6mGIIIYfzVrnWX9FSJm7M7ovzK/view?usp=drivesdk"
               download
               target="_blank"
             />
