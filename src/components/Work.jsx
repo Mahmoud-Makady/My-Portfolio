@@ -5,6 +5,24 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
+    imgSrc: "/images/travello.png",
+    title: "Travello",
+    tags: [
+      "Firebase",
+      "React.Js",
+      "Redux",
+      "Context",
+      "Routing",
+      "AXIOS",
+      "Web Design",
+      "Custom Css",
+      "Chart.js",
+      "Formik with Yup",
+    ],
+    projectLink: "https://github.com/ehabmansour1/travello",
+    productionLink: "https://travello-psi.vercel.app/",
+  },
+  {
     imgSrc: "/images/shopo-market.png",
     title: "Shopo-Market",
     tags: [
