@@ -39,6 +39,35 @@ const works = [
     productionLink: "https://shopo-market.netlify.app/",
   },
   {
+    imgSrc: "/images/Skill-Stack.jpg",
+    title: "Skill-Stack",
+    tags: [
+      "React.Js",
+      "Tailwind",
+      "Web Design",
+      "Redux",
+      "Context",
+      "Routing",
+      "AXIOS",
+    ],
+    projectLink: "http://musical-youtiao-78d18d.netlify.app/",
+    productionLink: "http://musical-youtiao-78d18d.netlify.app/",
+  },
+  {
+    imgSrc: "/images/7amni.png",
+    title: "7amni",
+    tags: ["Html", "Css", "JavaScript", "Bootstrap", "PHP", "Laravel"],
+    projectLink: "https://7amni.netlify.app/",
+    productionLink: "https://7amni.netlify.app/",
+  },
+  {
+    imgSrc: "/images/pop-gpt.png",
+    title: "Pop-Gpt",
+    tags: ["React.Js", "Web Design", "Context", "Routing", "AXIOS", "Firebase"],
+    projectLink: "https://pop-gpt.vercel.app/",
+    productionLink: "https://pop-gpt.vercel.app/",
+  },
+  {
     imgSrc: "/images/screen-spot.png",
     title: "Screen-Spot",
     tags: [
@@ -57,84 +86,50 @@ const works = [
   {
     imgSrc: "/images/e-games.png",
     title: "E-Games",
-    tags: [
-      "HTML5",
-      "CSS3",
-      "API",
-      "LocalStorage",
-      "BootStrap",
-      "JS",
-      "ES6",
-    ],
+    tags: ["HTML5", "CSS3", "API", "LocalStorage", "BootStrap", "JS", "ES6"],
     projectLink: "https://github.com/Mahmoud-Makady/EGames",
-    productionLink:
-      "https://mahmoud-makady.github.io/EGames/",
+    productionLink: "https://mahmoud-makady.github.io/EGames/",
+  },
+  {
+    imgSrc: "/images/Amon.png",
+    title: "Amon Express Limousine",
+    tags: ["Html", "Css", "JavaScript", "Bootstrap", "PHP", "Laravel"],
+    projectLink: "https://amonexpresslimousine.com/",
+    productionLink: "https://amonexpresslimousine.com/",
   },
   {
     imgSrc: "/images/movies.png",
     title: "Movies",
-    tags: [
-        "HTML5",
-        "CSS3",
-        "API",
-        "Web Design", 
-        "BootStrap", 
-        "JS"
-      ],
+    tags: ["HTML5", "CSS3", "API", "Web Design", "BootStrap", "JS"],
     projectLink: "https://github.com/Mahmoud-Makady/Movies",
-    productionLink:
-      "https://mahmoud-makady.github.io/Movies/",
+    productionLink: "https://mahmoud-makady.github.io/Movies/",
   },
   {
     imgSrc: "/images/study-planner.png",
     title: "Study-Planner",
-    tags: [
-      "FireStore", 
-      "Authentication", 
-      "JS", 
-      "BootStrap", 
-      "ES6"
-    ],
+    tags: ["FireStore", "Authentication", "JS", "BootStrap", "ES6"],
     projectLink: "https://github.com/Mahmoud-Makady/Study-Planner",
-    productionLink:
-      "https://mahmoud-makady.github.io/Study-Planner/",
+    productionLink: "https://mahmoud-makady.github.io/Study-Planner/",
   },
 
   {
     imgSrc: "/images/to-do.png",
     title: "To-Do-List",
-    tags: [
-      "Web-design", 
-      "JS", 
-      "CSS3",
-      "Bootstrap"
-    ],
+    tags: ["Web-design", "JS", "CSS3", "Bootstrap"],
     projectLink: "https://github.com/Mahmoud-Makady/To-Do-List",
     productionLink: "https://mahmoud-makady.github.io/To-Do-List/",
   },
   {
     imgSrc: "/images/quick-store.png",
     title: "Quick-Store",
-    tags: [
-      "Web-design", 
-      "HTML5",
-      "CSS3",
-      "JS",
-      "API",
-      "BootStrap"
-    ],
+    tags: ["Web-design", "HTML5", "CSS3", "JS", "API", "BootStrap"],
     projectLink: "https://github.com/Mahmoud-Makady/Quick-Store",
     productionLink: "https://mahmoud-makady.github.io/Quick-Store/",
   },
   {
     imgSrc: "/images/mealify.png",
     title: "Mealify",
-    tags: [
-      "Web-design", 
-      "HTML5",
-      "CSS3",
-      "BootStrap"
-    ],
+    tags: ["Web-design", "HTML5", "CSS3", "BootStrap"],
     projectLink: "https://github.com/Mahmoud-Makady/Mealify",
     productionLink: "https://mahmoud-makady.github.io/Mealify/",
   },
