@@ -46,11 +46,9 @@ const About = () => {
             ))}
 
             <img
-              src= "/images/icon.png"
+              src="/src/assets/logo2.png"
               alt="logo"
-              width={60}
-              height={60}
-              className="ml-auto md:w-[40px] md:h-[40px]"
+              className="ml-auto md:w-[50px] md:h-[50px] sm:h-[40px] w-[35px] h-[30px] opacity-80 pointer-events-none select-none z-10"
             />
           </div>
         </div>

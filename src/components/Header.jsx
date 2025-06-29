@@ -1,4 +1,3 @@
-
 /**
  * Node Modules
  */
@@ -10,7 +9,6 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 
 const Header = () => {
-
   const [navOpen, setNavOpen] = useState(false);
 
   return (
@@ -19,19 +17,21 @@ const Header = () => {
         <h1>
           <a href="/" className="logo text-zinc-50 ">
             <img
-              src= "/images/logo.png"
+              src="/src/assets/logo2.png"
               width={80}
               height={80}
               alt="Mahmoud Makady"
             />
           </a>
         </h1>
-        
 
         <div className="relative md:justify-center">
-          <button className="menu-btn md:hidden" onClick={() => setNavOpen((prev)=> !prev)}>
+          <button
+            className="menu-btn md:hidden"
+            onClick={() => setNavOpen((prev) => !prev)}
+          >
             <span className="material-symbols-rounded">
-              {navOpen ? 'close' : 'menu'}
+              {navOpen ? "close" : "menu"}
             </span>
           </button>
           <Navbar navOpen={navOpen} />

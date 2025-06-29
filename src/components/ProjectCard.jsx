@@ -2,6 +2,7 @@
  * Node Modules
  */
 import PropTypes from "prop-types";
+import logo from "/src/assets/logo2.png";
 
 const ProjectCard = ({
   imgSrc,
@@ -9,6 +10,8 @@ const ProjectCard = ({
   tags,
   projectLink,
   productionLink,
+  description,
+  stage,
   classes,
 }) => {
   return (
@@ -18,13 +21,19 @@ const ProjectCard = ({
         classes
       }
     >
-      
-      <figure className="img-box aspect-square rounded-lg mb-4">
+      {/* Logo watermark */}
+      <img
+        src={logo}
+        alt="logo watermark"
+        className="absolute right-5 bottom-4 w-8 h-8 opacity-80 pointer-events-none select-none z-10"
+      />
+      <figure className="img-box aspect-square rounded-lg mb-2">
         <img src={imgSrc} alt={title} className="img-cover" loading="lazy" />
       </figure>
       <div className="flex items-center justify-between gap-4">
         <div className="">
-          <h3 className="title-1 mb-3">{title}</h3>
+          <h3 className="title-1 font-semibold text-sky-500 mb-3">{title}</h3>
+          <p className="text-sm text-sky-200 pb-3">{description}</p>
 
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((label, key) => (
@@ -95,6 +104,8 @@ ProjectCard.propTypes = {
   tags: PropTypes.array.isRequired,
   projectLink: PropTypes.string,
   productionLink: PropTypes.string,
+  description: PropTypes.string,
+  stage: PropTypes.string,
   classes: PropTypes.string,
 };
 
