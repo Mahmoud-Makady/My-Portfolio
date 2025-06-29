@@ -2,45 +2,53 @@
  * Components
  */
 import SkillCard from "./SkillCard";
+import html5 from "../assets/html5.png";
+import css3 from "../assets/css3.svg";
+import javascript from "../assets/javascript.svg";
+import figma from "../assets/figma.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import react from "../assets/react.svg";
+import tailwindcss from "../assets/tailwindcss.svg";
+import firebase from "../assets/firebase.svg";
 
 const skillItem = [
   {
-    imgSrc: "/src/assets/html5.png",
+    imgSrc: html5,
     label: "HTML5",
     desc: "User Interface",
   },
   {
-    imgSrc: "/src/assets/css3.svg",
+    imgSrc: css3,
     label: "CSS",
     desc: "User Interface",
   },
   {
-    imgSrc: "/src/assets/javascript.svg",
+    imgSrc: javascript,
     label: "JavaScript",
     desc: "Interaction",
   },
   {
-    imgSrc: "/src/assets/figma.svg",
+    imgSrc: figma,
     label: "Figma",
     desc: "Design tool",
   },
   {
-    imgSrc: "/src/assets/bootstrap.svg",
+    imgSrc: bootstrap,
     label: "BootStrap",
     desc: "User Interface",
   },
   {
-    imgSrc: "/src/assets/react.svg",
+    imgSrc: react,
     label: "React",
     desc: "Framework",
   },
   {
-    imgSrc: "/src/assets/tailwindcss.svg",
+    imgSrc: tailwindcss,
     label: "TailwindCSS",
     desc: "User Interface",
   },
   {
-    imgSrc: "/src/assets/firebase.svg",
+    imgSrc: firebase,
     label: "Firebase",
     desc: "Database",
   },

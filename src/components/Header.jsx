@@ -2,6 +2,7 @@
  * Node Modules
  */
 import { useState } from "react";
+import logo from "../assets/logo2.png";
 
 /**
  * Components
@@ -16,12 +17,7 @@ const Header = () => {
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid-cols-[1fr-3fr-1fr]">
         <h1>
           <a href="/" className="logo text-zinc-50 ">
-            <img
-              src="/src/assets/logo2.png"
-              width={80}
-              height={80}
-              alt="Mahmoud Makady"
-            />
+            <img src={logo} width={80} height={80} alt="Mahmoud Makady" />
           </a>
         </h1>
 

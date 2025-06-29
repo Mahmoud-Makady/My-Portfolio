@@ -2,10 +2,23 @@
  * Components
  */
 import ProjectCard from "./ProjectCard";
+import travelloImg from "../assets/projects/travello.png";
+import shopoMarketImg from "../assets/projects/shopo-market.png";
+import SkillStackImg from "../assets/projects/Skill-Stack.jpg";
+import hamniImg from "../assets/projects/7amni.png";
+import popGptImg from "../assets/projects/pop-gpt.png";
+import screenSpotImg from "../assets/projects/screen-spot.png";
+import eGamesImg from "../assets/projects/e-games.png";
+import AmonImg from "../assets/projects/Amon.png";
+import moviesImg from "../assets/projects/movies.png";
+import studyPlannerImg from "../assets/projects/study-planner.png";
+import toDoImg from "../assets/projects/to-do.png";
+import quickStoreImg from "../assets/projects/quick-store.png";
+import mealifyImg from "../assets/projects/mealify.png";
 
 const works = [
   {
-    imgSrc: "/src/assets/projects/travello.png",
+    imgSrc: travelloImg,
     title: "Travello",
     tags: [
       "Firebase",
@@ -24,7 +37,7 @@ const works = [
     description: "Travel booking platform with real-time data and modern UI.",
   },
   {
-    imgSrc: "/src/assets/projects/shopo-market.png",
+    imgSrc: shopoMarketImg,
     title: "Shopo-Market",
     tags: [
       "API",
@@ -41,7 +54,7 @@ const works = [
     description: "E-commerce platform with product search and cart features.",
   },
   {
-    imgSrc: "/src/assets/projects/Skill-Stack.jpg",
+    imgSrc: SkillStackImg,
     title: "Skill-Stack",
     tags: [
       "React.Js",
@@ -58,7 +71,7 @@ const works = [
       "A modern, responsive platform for exploring and accessing tech courses.",
   },
   {
-    imgSrc: "/src/assets/projects/7amni.png",
+    imgSrc: hamniImg,
     title: "7amni",
     tags: ["Html", "Css", "JavaScript", "Bootstrap", "PHP", "Laravel"],
     projectLink: "https://7amni.netlify.app/",
@@ -66,7 +79,7 @@ const works = [
     description: "A web app for social and business networking.",
   },
   {
-    imgSrc: "/src/assets/projects/pop-gpt.png",
+    imgSrc: popGptImg,
     title: "Pop-Gpt",
     tags: ["React.Js", "Web Design", "Context", "Routing", "AXIOS", "Firebase"],
     projectLink: "https://pop-gpt.vercel.app/",
@@ -74,7 +87,7 @@ const works = [
     description: "AI-powered chat app with modern design.",
   },
   {
-    imgSrc: "/src/assets/projects/screen-spot.png",
+    imgSrc: screenSpotImg,
     title: "Screen-Spot",
     tags: [
       "API",
@@ -91,7 +104,7 @@ const works = [
     description: "Movie and TV show discovery platform.",
   },
   {
-    imgSrc: "/src/assets/projects/e-games.png",
+    imgSrc: eGamesImg,
     title: "E-Games",
     tags: ["HTML5", "CSS3", "API", "LocalStorage", "BootStrap", "JS", "ES6"],
     projectLink: "https://github.com/Mahmoud-Makady/EGames",
@@ -99,7 +112,7 @@ const works = [
     description: "Online games portal with user progress tracking.",
   },
   {
-    imgSrc: "/src/assets/projects/Amon.png",
+    imgSrc: AmonImg,
     title: "Amon Express Limousine",
     tags: ["Html", "Css", "JavaScript", "Bootstrap", "PHP", "Laravel"],
     projectLink: "https://amonexpresslimousine.com/",
@@ -107,7 +120,7 @@ const works = [
     description: "Business website for limousine booking and services.",
   },
   {
-    imgSrc: "/src/assets/projects/movies.png",
+    imgSrc: moviesImg,
     title: "Movies",
     tags: ["HTML5", "CSS3", "API", "Web Design", "BootStrap", "JS"],
     projectLink: "https://github.com/Mahmoud-Makady/Movies",
@@ -115,7 +128,7 @@ const works = [
     description: "Browse and search for movies with detailed info.",
   },
   {
-    imgSrc: "/src/assets/projects/study-planner.png",
+    imgSrc: studyPlannerImg,
     title: "Study-Planner",
     tags: ["FireStore", "Authentication", "JS", "BootStrap", "ES6"],
     projectLink: "https://github.com/Mahmoud-Makady/Study-Planner",
@@ -123,7 +136,7 @@ const works = [
     description: "Organize study tasks and track progress efficiently.",
   },
   {
-    imgSrc: "/src/assets/projects/to-do.png",
+    imgSrc: toDoImg,
     title: "To-Do-List",
     tags: ["Web-design", "JS", "CSS3", "Bootstrap"],
     projectLink: "https://github.com/Mahmoud-Makady/To-Do-List",
@@ -131,7 +144,7 @@ const works = [
     description: "Simple and effective to-do list app for daily tasks.",
   },
   {
-    imgSrc: "/src/assets/projects/quick-store.png",
+    imgSrc: quickStoreImg,
     title: "Quick-Store",
     tags: ["Web-design", "HTML5", "CSS3", "JS", "API", "BootStrap"],
     projectLink: "https://github.com/Mahmoud-Makady/Quick-Store",
@@ -139,7 +152,7 @@ const works = [
     description: "Quick online store with product catalog and cart.",
   },
   {
-    imgSrc: "/src/assets/projects/mealify.png",
+    imgSrc: mealifyImg,
     title: "Mealify",
     tags: ["Web-design", "HTML5", "CSS3", "BootStrap"],
     projectLink: "https://github.com/Mahmoud-Makady/Mealify",

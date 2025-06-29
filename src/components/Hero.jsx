@@ -2,6 +2,7 @@
  * Components
  */
 import { ButtonOutline, ButtonPrimary } from "./Button";
+import profilPic from "../assets/pic.jpg";
 
 const Hero = () => {
   return (
@@ -41,7 +42,7 @@ const Hero = () => {
 
         <div className="flex justify-center lg:justify-end">
           <img
-            src="/src/assets/pic.jpg"
+            src={profilPic}
             alt="Mahmoud Makady"
             className="w-3/4 sm:max-w-[400px] lg:max-w-full mx-auto bg-gradient-to-t from-slate-400 via-25% via-slate-400/40 to-65% rounded-[70px] object-cover aspect-[4/5]"
           />

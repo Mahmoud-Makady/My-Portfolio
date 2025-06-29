@@ -17,6 +17,7 @@ const sitemap = [
     href: "#contact",
   },
 ];
+import logo from "../assets/logo2.png";
 
 const socials = [
   {
@@ -85,12 +86,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-between pt-10 mb-8">
           <a href="/" className="logo reveal-up">
-            <img
-              src="/src/assets/logo2.png"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
+            <img src={logo} alt="Logo" width={100} height={100} />
           </a>
 
           <p className="text-zinc-500 text-sm reveal-up">
