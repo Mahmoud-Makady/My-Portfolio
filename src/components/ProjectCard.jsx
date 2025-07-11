@@ -17,7 +17,7 @@ const ProjectCard = ({
   return (
     <div
       className={
-        "relative p-4 rounded-2xl bg-slate-700 hover:bg-sky-950 active:bg-slate-700/60 ring-1 ring-inset ring-slate-50/5 transition-colors " +
+        "relative p-4 rounded-2xl bg-slate-700 hover:bg-sky-950 active:bg-slate-700/60 ring-1 ring-inset ring-slate-50/5 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/20 group " +
         classes
       }
     >
@@ -25,20 +25,20 @@ const ProjectCard = ({
       <img
         src={logo}
         alt="logo watermark"
-        className="absolute right-5 bottom-4 w-8 h-8 opacity-80 pointer-events-none select-none z-10"
+        className="absolute right-5 bottom-4 w-8 h-8 opacity-80 pointer-events-none select-none z-10 group-hover:rotate-12 transition-transform duration-300"
       />
-      <figure className="img-box aspect-square rounded-lg mb-2">
-        <img src={imgSrc} alt={title} className="img-cover" loading="lazy" />
+      <figure className="img-box aspect-square rounded-lg mb-2 overflow-hidden">
+        <img src={imgSrc} alt={title} className="img-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
       </figure>
       <div className="flex items-center justify-between gap-4">
         <div className="">
-          <h3 className="title-1 font-semibold text-sky-500 mb-3">{title}</h3>
+          <h3 className="title-1 font-semibold text-sky-500 mb-3 group-hover:text-sky-300 transition-colors">{title}</h3>
           <p className="text-sm text-sky-200 pb-3">{description}</p>
 
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((label, key) => (
               <span
-                className="h-8 text-sm text-slate-300 hover:text-slate-900 bg-slate-900 hover:bg-slate-300 transition grid items-center px-3 rounded-lg"
+                className="h-8 text-sm text-slate-300 hover:text-slate-900 bg-slate-900 hover:bg-slate-300 transition-all duration-200 hover:scale-110 grid items-center px-3 rounded-lg"
                 key={key}
               >
                 {label}
@@ -48,9 +48,9 @@ const ProjectCard = ({
         </div>
         <div className="flex flex-col gap-2">
           <div
-            className={`w-11 h-11 rounded-lg grid place-items-center text-slate-300 hover:text-slate-900 shrink-0 transition ${
+            className={`w-11 h-11 rounded-lg grid place-items-center text-slate-300 hover:text-slate-900 shrink-0 transition-all duration-300 hover:scale-110 hover:rotate-12 ${
               projectLink
-                ? "bg-slate-900 hover:bg-slate-300 cursor-pointer transition"
+                ? "bg-slate-900 hover:bg-slate-300 cursor-pointer hover:shadow-lg"
                 : "bg-gray-300 cursor-not-allowed"
             }`}
             aria-disabled={!projectLink}
@@ -71,9 +71,9 @@ const ProjectCard = ({
           </div>
 
           <div
-            className={`w-11 h-11 rounded-lg grid place-items-center text-slate-300 hover:text-slate-900 shrink-0 transition ${
+            className={`w-11 h-11 rounded-lg grid place-items-center text-slate-300 hover:text-slate-900 shrink-0 transition-all duration-300 hover:scale-110 hover:rotate-12 ${
               productionLink
-                ? "bg-slate-900 hover:bg-slate-300 cursor-pointer transition"
+                ? "bg-slate-900 hover:bg-slate-300 cursor-pointer hover:shadow-lg"
                 : "bg-gray-300 cursor-not-allowed"
             }`}
             aria-disabled={!productionLink}

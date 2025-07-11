@@ -128,33 +128,42 @@ const Loader = ({ onLoadingComplete }) => {
         </div>
 
         {/* Floating Dots Animation */}
-        <div className="absolute top-20 left-10">
-          <div className="w-2 h-2 bg-sky-400 rounded-full animate-bounce"></div>
+        {/* Code Symbols Animation */}
+        <div className="absolute top-20 left-10 text-sky-400/30 text-2xl font-mono animate-pulse">
+          {'<'}
         </div>
-        <div className="absolute top-32 right-16">
-          <div className="w-1 h-1 bg-sky-300 rounded-full animate-bounce delay-300"></div>
+        <div className="absolute top-32 right-16 text-sky-300/30 text-xl font-mono animate-bounce delay-300">
+          {'/'}
         </div>
-        <div className="absolute bottom-20 left-20">
-          <div className="w-1.5 h-1.5 bg-sky-500 rounded-full animate-bounce delay-700"></div>
+        <div className="absolute bottom-20 left-20 text-sky-500/30 text-2xl font-mono animate-pulse delay-700">
+          {'>'}
         </div>
-        <div className="absolute bottom-32 right-12">
-          <div className="w-1 h-1 bg-sky-200 rounded-full animate-bounce delay-1000"></div>
+        <div className="absolute bottom-32 right-12 text-sky-200/30 text-lg font-mono animate-bounce delay-1000">
+          {'{}'}
+        </div>
+        <div className="absolute top-1/2 left-8 text-sky-400/20 text-sm font-mono animate-pulse delay-500">
+          {'()'}
+        </div>
+        <div className="absolute top-1/3 right-8 text-sky-300/20 text-lg font-mono animate-bounce delay-1200">
+          {'[]'}
         </div>
       </div>
 
       {/* Loading Particles */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-sky-400/30 rounded-full animate-pulse"
+            className="absolute text-sky-400/20 text-xs font-mono animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 2}s`,
               animationDuration: `${2 + Math.random() * 2}s`
             }}
-          ></div>
+          >
+            {['<', '>', '/', '{}', '()', '[]', '=', ';'][Math.floor(Math.random() * 8)]}
+          </div>
         ))}
       </div>
     </div>

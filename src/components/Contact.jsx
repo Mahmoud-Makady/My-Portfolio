@@ -89,7 +89,7 @@ const Contact = () => {
               <a
                 key={key}
                 href={href}
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color, color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80"
+                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-all duration-300 hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 hover:scale-110 hover:rotate-12 hover:shadow-lg"
                 target="_blank"
               >
                 {icon}
@@ -116,7 +116,7 @@ const Contact = () => {
                 autoComplete="name"
                 required
                 placeholder="Mahmoud Makady"
-                className="text-field reveal-up"
+                className="text-field reveal-up focus:scale-105 transition-transform duration-300"
               />
             </div>
 
@@ -132,7 +132,7 @@ const Contact = () => {
                 autoComplete="email"
                 required
                 placeholder="mahmoudmakady.dev@gmail.com"
-                className="text-field reveal-up"
+                className="text-field reveal-up focus:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -147,13 +147,13 @@ const Contact = () => {
               id="message"
               placeholder="Hi!"
               required
-              className="text-field resize-y min-h-32 max-h-80 reveal-up"
+              className="text-field resize-y min-h-32 max-h-80 reveal-up focus:scale-105 transition-transform duration-300"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up"
+            className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/25"
           >
             Submit
           </button>

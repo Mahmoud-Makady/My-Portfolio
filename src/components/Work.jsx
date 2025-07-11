@@ -197,7 +197,7 @@ const Work = () => {
         </div>
         <div className="grid place-items-center mt-8">
           <a
-            className="btn btn-secondary p-5 reveal-up"
+            className="btn btn-secondary p-5 reveal-up hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/25"
             href="https://github.com/Mahmoud-Makady"
             target="_blank"
             rel="noopener noreferrer"
