@@ -1,6 +1,6 @@
 {
   "name": "Mahmoud Makady",
-  "short_name": "",
+  "short_name": "Mahmoud Makady",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#f2f2f2",
-  "background_color": "#ffffff",
+  "theme_color": "#0A182C",
+  "background_color": "#0A182C",
   "display": "standalone"
 }
