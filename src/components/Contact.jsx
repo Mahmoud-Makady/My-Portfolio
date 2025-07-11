@@ -76,7 +76,7 @@ const socialLinks = [
 
 const Contact = () => {
   return (
-    <section className="section" id="contact">
+    <section className="section contact-section" id="contact">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
           <h2 className="headline-2  reveal-up">
@@ -84,7 +84,7 @@ const Contact = () => {
             Amazing!
           </h2>
 
-          <div className="flex items-center gap-2 mt-auto reveal-up">
+          <div className="flex items-center gap-2 mt-auto reveal-up social-links">
             {socialLinks.map(({ href, icon }, key) => (
               <a
                 key={key}
@@ -101,7 +101,7 @@ const Contact = () => {
         <form
           action="https://getform.io/f/avrwrxpa"
           method="post"
-          className="xl:pl-10 2xl:pl-20"
+          className="xl:pl-10 2xl:pl-20 contact-form"
         >
           <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
             <div className="mb-4">
