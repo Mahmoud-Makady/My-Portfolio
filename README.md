@@ -1,4 +1,4 @@
-# Abdulrahman Portfolio
+# Mahmoud Makady Portfolio
 
 ## Getting Started
 1. Clone the repository
