@@ -55,18 +55,76 @@ const Loader = ({ onLoadingComplete }) => {
         </div>
 
         {/* Progress Bar */}
-        <div className="w-64 h-2 bg-slate-800 rounded-full overflow-hidden">
-          <div 
-            className="h-full bg-gradient-to-r from-sky-400 to-sky-600 rounded-full transition-all duration-300 ease-out"
-            style={{ width: `${progress}%` }}
-          ></div>
+        <div className="w-80 mb-6">
+          {/* Code-style Progress Container */}
+          <div className="bg-slate-900/80 backdrop-blur-sm rounded-xl p-4 border border-slate-700/50">
+            {/* Terminal Header */}
+            <div className="flex items-center gap-2 mb-3">
+              <div className="flex gap-1.5">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+              <span className="text-slate-400 text-xs font-mono ml-2">building-portfolio.js</span>
+            </div>
+            
+            {/* Progress Steps */}
+            <div className="space-y-2 mb-4">
+              <div className={`flex items-center gap-2 text-xs font-mono transition-colors ${progress >= 25 ? 'text-orange-400' : 'text-slate-500'}`}>
+                <span>{progress >= 25 ? '✓' : '○'}</span>
+                <span>&lt;html&gt;</span>
+                <span className="text-slate-400">structuring...</span>
+              </div>
+              <div className={`flex items-center gap-2 text-xs font-mono transition-colors ${progress >= 50 ? 'text-blue-400' : 'text-slate-500'}`}>
+                <span>{progress >= 50 ? '✓' : '○'}</span>
+                <span>CSS</span>
+                <span className="text-slate-400">styling...</span>
+              </div>
+              <div className={`flex items-center gap-2 text-xs font-mono transition-colors ${progress >= 75 ? 'text-yellow-400' : 'text-slate-500'}`}>
+                <span>{progress >= 75 ? '✓' : '○'}</span>
+                <span>JavaScript</span>
+                <span className="text-slate-400">adding interactivity...</span>
+              </div>
+              <div className={`flex items-center gap-2 text-xs font-mono transition-colors ${progress >= 100 ? 'text-cyan-400' : 'text-slate-500'}`}>
+                <span>{progress >= 100 ? '✓' : '○'}</span>
+                <span>React</span>
+                <span className="text-slate-400">rendering components...</span>
+              </div>
+            </div>
+            
+            {/* Modern Progress Bar */}
+            <div className="relative">
+              <div className="h-3 bg-slate-800 rounded-full overflow-hidden border border-slate-600/30">
+                <div 
+                  className="h-full bg-gradient-to-r from-orange-500 via-blue-500 via-yellow-500 to-cyan-400 rounded-full transition-all duration-500 ease-out relative"
+                  style={{ width: `${progress}%` }}
+                >
+                  {/* Animated shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                  {/* Moving dot */}
+                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-white rounded-full shadow-lg animate-pulse"></div>
+                </div>
+              </div>
+              
+              {/* Progress indicators */}
+              <div className="flex justify-between mt-2 text-xs">
+                <span className="text-orange-400 font-mono">HTML</span>
+                <span className="text-blue-400 font-mono">CSS</span>
+                <span className="text-yellow-400 font-mono">JS</span>
+                <span className="text-cyan-400 font-mono">React</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Progress Percentage */}
-        <div className="mt-4">
-          <span className="text-sky-400 font-medium text-lg">
+        <div className="text-center">
+          <span className="text-2xl font-mono font-bold bg-gradient-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
             {progress}%
           </span>
+          <div className="text-slate-400 text-sm mt-1">
+            <span className="font-mono">&lt;/&gt;</span> Front-End Developer
+          </div>
         </div>
 
         {/* Floating Dots Animation */}
