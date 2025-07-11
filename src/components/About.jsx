@@ -13,10 +13,10 @@ const aboutItems = [
 
 const About = () => {
   return (
-    <section id="about" className="section about-section">
+    <section id="about" className="section">
       <div className="container">
-        <div className="bg-slate-800 p-7 rounded-2xl md:p-12 reveal-up about-content">
-          <p className="text-slate-300 mb-4 md:mb-8 md:text-xl about-text">
+        <div className="bg-slate-800 p-7 rounded-2xl md:p-12 reveal-up">
+          <p className="text-slate-300 mb-4 md:mb-8 md:text-xl">
             Hey there! 👋 I'm Mahmoud Makady, a passionate Front-End Developer
             with a keen eye for crafting sleek, interactive, and
             high-performance web applications. I specialize in building modern,
@@ -26,7 +26,7 @@ const About = () => {
             to explore my work and let's build something amazing together!
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 md:gap-7 about-stats">
+          <div className="flex flex-wrap items-center gap-4 md:gap-7">
             {aboutItems.map(({ label, number }, key) => (
               <div key={key}>
                 <div className="flex items-center md:mb-2">

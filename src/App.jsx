@@ -5,7 +5,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { useState, useEffect } from 'react';
-import useAnimeAnimations from './hooks/useAnimeAnimations';
 
 
 /**
@@ -27,14 +26,10 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
-import AnimatedBackground from './components/AnimatedBackground';
 
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
-    
-    // Initialize anime.js animations
-    useAnimeAnimations();
 
     const handleLoadingComplete = () => {
         setIsLoading(false);
@@ -67,7 +62,6 @@ const App = () => {
 
     return (
         <ReactLenis root>
-            <AnimatedBackground />
 
             <Header />
             <main>
