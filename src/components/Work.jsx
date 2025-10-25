@@ -15,8 +15,17 @@ import studyPlannerImg from "../assets/projects/study-planner.png";
 import toDoImg from "../assets/projects/to-do.png";
 import quickStoreImg from "../assets/projects/quick-store.png";
 import mealifyImg from "../assets/projects/mealify.png";
+import kartakNfcImg from "../assets/projects/kartakNfcImg.png";
 
 const works = [
+  {
+    imgSrc: kartakNfcImg,
+    title: "Kartak NFC",
+    tags: ["Html", "JavaScript", "PHP", "Web Design", "Custom Css"],
+    projectLink: "https://kartaknfc.com/",
+    productionLink: "https://kartaknfc.com/",
+    description: "Digital business card platform using NFC technology.",
+  },
   {
     imgSrc: travelloImg,
     title: "Travello",
