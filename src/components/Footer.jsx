@@ -86,12 +86,20 @@ const Footer = () => {
 
         <div className="flex items-center justify-between pt-10 mb-8">
           <a href="/" className="logo reveal-up block">
-            <img src={logo} alt="Logo" width={100} height={100} className="hover:scale-110 hover:rotate-12 transition-transform duration-300" />
+            <img
+              src={logo}
+              alt="Logo"
+              width={100}
+              height={100}
+              className="hover:scale-110 hover:rotate-12 transition-transform duration-300"
+            />
           </a>
 
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2025{" "}
-            <span className="text-sky-500 reveal-up hover:text-sky-300 transition-colors cursor-pointer">Mahmoud Makady</span>
+            &copy; {new Date().getFullYear()}{" "}
+            <span className="text-sky-500 reveal-up hover:text-sky-300 transition-colors cursor-pointer">
+              Mahmoud Makady
+            </span>
           </p>
         </div>
       </div>

@@ -16,8 +16,26 @@ import toDoImg from "../assets/projects/to-do.png";
 import quickStoreImg from "../assets/projects/quick-store.png";
 import mealifyImg from "../assets/projects/mealify.png";
 import kartakNfcImg from "../assets/projects/kartakNfcImg.png";
+import famImg from "../assets/projects/fam.jpg";
+import tripsImg from "../assets/projects/trips.jpg";
 
 const works = [
+  {
+    imgSrc: famImg,
+    title: "FAM Wear",
+    tags: ["React.js", "TypeScript", "Tailwind", "Web Design", "Local Storage"],
+    projectLink: "https://famwear.store/",
+    productionLink: "https://famwear.store/",
+    description: "E-commerce platform for trendy fashion clothing.",
+  },
+  {
+    imgSrc: tripsImg,
+    title: "Trips & Tips",
+    tags: ["React.js", "Redux", "Node.js", "Web Design", "Custom Css"],
+    projectLink: "https://www.trips-tips.cloud/",
+    productionLink: "https://www.trips-tips.cloud/",
+    description: "Travel blog, tips sharing and trips booking platform.",
+  },
   {
     imgSrc: kartakNfcImg,
     title: "Kartak NFC",

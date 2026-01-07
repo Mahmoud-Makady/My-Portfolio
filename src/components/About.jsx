@@ -3,7 +3,7 @@ import logo from "../assets/logo2.png";
 const aboutItems = [
   {
     label: "Project done",
-    number: 10,
+    number: 15,
   },
   {
     label: "Years of Experience",
@@ -28,7 +28,10 @@ const About = () => {
 
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
             {aboutItems.map(({ label, number }, key) => (
-              <div key={key} className="hover:scale-110 transition-transform duration-300 cursor-pointer">
+              <div
+                key={key}
+                className="hover:scale-110 transition-transform duration-300 cursor-pointer"
+              >
                 <div className="flex items-center md:mb-2">
                   <span className="text-2xl font-semibold md:text-4xl bg-gradient-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
                     {number}
@@ -38,7 +41,9 @@ const About = () => {
                   </span>
                 </div>
 
-                <p className="text-sm text-slate-300 hover:text-sky-300 transition-colors">{label}</p>
+                <p className="text-sm text-slate-300 hover:text-sky-300 transition-colors">
+                  {label}
+                </p>
               </div>
             ))}
 
