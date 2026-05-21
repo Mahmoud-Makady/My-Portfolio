@@ -2,8 +2,6 @@
  * Components
  */
 import SkillCard from "./SkillCard";
-import html5 from "../assets/html5.png";
-import css3 from "../assets/css3.svg";
 import javascript from "../assets/javascript.svg";
 import figma from "../assets/figma.svg";
 import bootstrap from "../assets/bootstrap.svg";
@@ -13,44 +11,34 @@ import firebase from "../assets/firebase.svg";
 
 const skillItem = [
   {
-    imgSrc: html5,
-    label: "HTML5",
-    desc: "User Interface",
+    imgSrc: react,
+    label: "React",
+    desc: "UI Library",
   },
   {
-    imgSrc: css3,
-    label: "CSS",
-    desc: "User Interface",
+    imgSrc: tailwindcss,
+    label: "Tailwind CSS",
+    desc: "Styling",
   },
   {
     imgSrc: javascript,
     label: "JavaScript",
-    desc: "Interaction",
-  },
-  {
-    imgSrc: figma,
-    label: "Figma",
-    desc: "Design tool",
+    desc: "Language",
   },
   {
     imgSrc: bootstrap,
-    label: "BootStrap",
-    desc: "User Interface",
-  },
-  {
-    imgSrc: react,
-    label: "React",
-    desc: "Framework",
-  },
-  {
-    imgSrc: tailwindcss,
-    label: "TailwindCSS",
-    desc: "User Interface",
+    label: "Bootstrap",
+    desc: "UI Framework",
   },
   {
     imgSrc: firebase,
     label: "Firebase",
-    desc: "Database",
+    desc: "Backend",
+  },
+  {
+    imgSrc: figma,
+    label: "Figma",
+    desc: "Design",
   },
 ];
 

@@ -44,8 +44,8 @@ const Footer = () => {
       <div className="container">
         <div className="lg:grid lg:grid-cols-2">
           <div className="mb-10">
-            <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-              Ready to create something great? Let's collaborate!
+            <h2 className="headline-1 mb-8 lg:max-w-[14ch] reveal-up">
+              Front-End Developer crafting fast, modern web experiences.
             </h2>
           </div>
           <div className="grid grid-cols-2 gap-4 lg:pl-20">
@@ -91,7 +91,7 @@ const Footer = () => {
               alt="Logo"
               width={100}
               height={100}
-              className="hover:scale-110 hover:rotate-12 transition-transform duration-300"
+              className=""
             />
           </a>
 

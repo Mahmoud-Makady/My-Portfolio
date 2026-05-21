@@ -2,7 +2,7 @@
  * Components
  */
 import { ButtonOutline, ButtonPrimary } from "./Button";
-import profilPic from "../assets/pic.jpg";
+import profilPic from "../assets/profile.png";
 
 const Hero = () => {
   return (
@@ -44,7 +44,7 @@ const Hero = () => {
           <img
             src={profilPic}
             alt="Mahmoud Makady"
-            className="w-3/4 sm:max-w-[400px] lg:max-w-full mx-auto bg-gradient-to-t from-slate-400 via-25% via-slate-400/40 to-65% rounded-[70px] object-cover aspect-[4/5] hover:scale-105 transition-transform duration-500 hover:shadow-2xl hover:shadow-sky-500/20"
+            className="w-3/4 sm:max-w-[400px] lg:max-w-full mx-auto bg-gradient-to-t from-sky-700/10 via-sky-500/15 via-50% to-transparent rounded-3xl object-contain object-bottom aspect-[4/5] shadow-[0_30px_60px_-20px_rgba(56,189,248,0.10)] hover:scale-[1.02] transition-transform duration-500"
           />
         </div>
       </div>

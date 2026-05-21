@@ -17,13 +17,13 @@ const Header = () => {
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid-cols-[1fr-3fr-1fr]">
         <h1>
           <a href="/" className="logo text-zinc-50 block">
-            <img src={logo} width={80} height={80} alt="Mahmoud Makady" className="hover:scale-110 hover:rotate-12 transition-transform duration-300" />
+            <img src={logo} width={80} height={80} alt="Mahmoud Makady" />
           </a>
         </h1>
 
         <div className="relative md:justify-center">
           <button
-            className="menu-btn md:hidden hover:scale-110 transition-transform duration-300"
+            className="menu-btn md:hidden"
             onClick={() => setNavOpen((prev) => !prev)}
           >
             <span className="material-symbols-rounded">

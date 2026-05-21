@@ -28,10 +28,7 @@ const About = () => {
 
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
             {aboutItems.map(({ label, number }, key) => (
-              <div
-                key={key}
-                className="hover:scale-110 transition-transform duration-300 cursor-pointer"
-              >
+              <div key={key}>
                 <div className="flex items-center md:mb-2">
                   <span className="text-2xl font-semibold md:text-4xl bg-gradient-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
                     {number}
@@ -50,7 +47,7 @@ const About = () => {
             <img
               src={logo}
               alt="logo"
-              className="ml-auto md:w-[50px] md:h-[50px] sm:h-[40px] w-[35px] h-[30px] opacity-80 pointer-events-none select-none z-10 hover:rotate-12 hover:scale-110 transition-transform duration-300"
+              className="ml-auto md:w-[50px] md:h-[50px] sm:h-[40px] w-[35px] h-[30px] opacity-80 pointer-events-none select-none z-10"
             />
           </div>
         </div>

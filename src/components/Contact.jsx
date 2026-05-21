@@ -89,7 +89,7 @@ const Contact = () => {
               <a
                 key={key}
                 href={href}
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-all duration-300 hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 hover:scale-110 hover:rotate-12 hover:shadow-lg"
+                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-colors duration-200 hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 focus-visible:outline-none focus-visible:ring-sky-400"
                 target="_blank"
               >
                 {icon}
@@ -116,7 +116,7 @@ const Contact = () => {
                 autoComplete="name"
                 required
                 placeholder="Mahmoud Makady"
-                className="text-field reveal-up focus:scale-105 transition-transform duration-300"
+                className="text-field reveal-up"
               />
             </div>
 
@@ -132,7 +132,7 @@ const Contact = () => {
                 autoComplete="email"
                 required
                 placeholder="mahmoudmakady.dev@gmail.com"
-                className="text-field reveal-up focus:scale-105 transition-transform duration-300"
+                className="text-field reveal-up"
               />
             </div>
           </div>
@@ -147,7 +147,7 @@ const Contact = () => {
               id="message"
               placeholder="Hi!"
               required
-              className="text-field resize-y min-h-32 max-h-80 reveal-up focus:scale-105 transition-transform duration-300"
+              className="text-field resize-y min-h-32 max-h-80 reveal-up"
             ></textarea>
           </div>
 

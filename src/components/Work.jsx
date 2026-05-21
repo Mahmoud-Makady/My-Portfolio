@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /**
  * Components
  */
@@ -27,6 +29,7 @@ const works = [
     projectLink: "https://famwear.store/",
     productionLink: "https://famwear.store/",
     description: "E-commerce platform for trendy fashion clothing.",
+    featured: true,
   },
   {
     imgSrc: tripsImg,
@@ -35,6 +38,7 @@ const works = [
     projectLink: "https://www.trips-tips.cloud/",
     productionLink: "https://www.trips-tips.cloud/",
     description: "Travel blog, tips sharing and trips booking platform.",
+    featured: true,
   },
   {
     imgSrc: kartakNfcImg,
@@ -43,6 +47,7 @@ const works = [
     projectLink: "https://kartaknfc.com/",
     productionLink: "https://kartaknfc.com/",
     description: "Digital business card platform using NFC technology.",
+    featured: true,
   },
   {
     imgSrc: travelloImg,
@@ -189,13 +194,58 @@ const works = [
   },
 ];
 
+const featuredWorks = works.filter((w) => w.featured);
+const restWorks = works.filter((w) => !w.featured);
+const PROJECTS_PER_PAGE = 6;
+
 const Work = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(restWorks.length / PROJECTS_PER_PAGE);
+
+  const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
+  const visibleWorks = restWorks.slice(
+    startIndex,
+    startIndex + PROJECTS_PER_PAGE
+  );
+
+  const goToPage = (page) => {
+    if (page < 1 || page > totalPages || page === currentPage) return;
+    setCurrentPage(page);
+    document
+      .getElementById("more-projects")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section id="work" className="section">
       <div className="container">
         <h2 className="headline-2 reveal-up mb-8">My Portfolio Highlights</h2>
+
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-12">
+          {featuredWorks.map((work, key) => (
+            <ProjectCard
+              key={`featured-${key}`}
+              imgSrc={work.imgSrc}
+              title={work.title}
+              tags={work.tags}
+              projectLink={work.projectLink}
+              productionLink={work.productionLink}
+              description={work.description}
+              stage={work.stage}
+              featured
+              classes=""
+            />
+          ))}
+        </div>
+
+        <h3
+          id="more-projects"
+          className="text-lg font-semibold text-slate-200 mb-5 scroll-mt-24"
+        >
+          More Projects
+        </h3>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(280px,_2fr))] gap-x-4 gap-y-5">
-          {works.map(
+          {visibleWorks.map(
             (
               {
                 imgSrc,
@@ -209,7 +259,7 @@ const Work = () => {
               key
             ) => (
               <ProjectCard
-                key={key}
+                key={`${currentPage}-${startIndex + key}`}
                 imgSrc={imgSrc}
                 title={title}
                 tags={tags}
@@ -217,11 +267,77 @@ const Work = () => {
                 productionLink={productionLink}
                 description={description}
                 stage={stage}
-                classes="reveal-up"
+                classes=""
               />
             )
           )}
         </div>
+
+        {totalPages > 1 && (
+          <nav
+            aria-label="Projects pagination"
+            className="flex items-center justify-center gap-2 mt-10"
+          >
+            <button
+              type="button"
+              onClick={() => goToPage(currentPage - 1)}
+              disabled={currentPage === 1}
+              aria-label="Previous page"
+              className="w-10 h-10 grid place-items-center rounded-lg bg-slate-800 text-slate-300 ring-1 ring-inset ring-slate-50/5 transition-colors hover:bg-sky-900 hover:text-sky-200 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-slate-800 disabled:hover:text-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
+            >
+              <span className="material-symbols-rounded" aria-hidden="true">
+                chevron_left
+              </span>
+            </button>
+
+            <ul className="flex items-center gap-2">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (page) => {
+                  const isActive = page === currentPage;
+                  return (
+                    <li key={page}>
+                      <button
+                        type="button"
+                        onClick={() => goToPage(page)}
+                        aria-label={`Go to page ${page}`}
+                        aria-current={isActive ? "page" : undefined}
+                        className={
+                          "w-10 h-10 grid place-items-center rounded-lg text-sm font-medium ring-1 ring-inset transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 " +
+                          (isActive
+                            ? "bg-sky-500 text-slate-950 ring-sky-400"
+                            : "bg-slate-800 text-slate-300 ring-slate-50/5 hover:bg-sky-900 hover:text-sky-200")
+                        }
+                      >
+                        {page}
+                      </button>
+                    </li>
+                  );
+                }
+              )}
+            </ul>
+
+            <button
+              type="button"
+              onClick={() => goToPage(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              aria-label="Next page"
+              className="w-10 h-10 grid place-items-center rounded-lg bg-slate-800 text-slate-300 ring-1 ring-inset ring-slate-50/5 transition-colors hover:bg-sky-900 hover:text-sky-200 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-slate-800 disabled:hover:text-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
+            >
+              <span className="material-symbols-rounded" aria-hidden="true">
+                chevron_right
+              </span>
+            </button>
+          </nav>
+        )}
+
+        <p
+          className="text-center text-sm text-slate-400 mt-4"
+          aria-live="polite"
+        >
+          Showing {startIndex + 1}–{startIndex + visibleWorks.length} of{" "}
+          {restWorks.length} more projects
+        </p>
+
         <div className="grid place-items-center mt-8">
           <a
             className="btn btn-secondary p-5 reveal-up hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/25"
@@ -229,7 +345,7 @@ const Work = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            See More
+            See all on GitHub
           </a>{" "}
         </div>
       </div>

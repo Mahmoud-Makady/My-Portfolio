@@ -26,9 +26,7 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
-import CodeRain from './components/CodeRain';
 import ScrollProgress from './components/ScrollProgress';
-import FloatingElements from './components/FloatingElements';
 
 
 const App = () => {
@@ -66,8 +64,6 @@ const App = () => {
     return (
         <ReactLenis root>
             <ScrollProgress />
-            <CodeRain />
-            <FloatingElements />
 
             <Header />
             <main>
